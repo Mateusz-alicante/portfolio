@@ -1,95 +1,56 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+
+import Shares from "../Components/Shares/Shares";
+import Exp from "../Components/Exp/Exp";
+
+import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.container}>
+        <h1>Hi, I'm Mateusz 👋</h1>
+        <br></br>
+        <p>Here is some quick info about me: </p>
+        <div className={styles.quickContainer}>
+          <div className={styles.singleQuickContainer}>
+            <h4>Currently studying at: University of Toronto degree:</h4>
+            <h2>Engineering Science (second year)</h2>
+          </div>
+          <div className={styles.singleQuickContainer}>
+            <h4>Favorite hobby:</h4>
+            <h2>Judo</h2>
+          </div>
+          <div className={styles.singleQuickContainer}>
+            <h4>Languages I speak:</h4>
+            <h2>English, Spainsh, Polish</h2>
+          </div>
+          <div className={styles.singleQuickContainer}>
+            <h4>Born in:</h4>
+            <h2>Warsaw, Poland</h2>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className={styles.shareAndCVContainer}>
+          <div>
+            <h2>My accounts:</h2>
+            <div>
+              <Shares />
+            </div>
+          </div>
+          <div className={styles.resumeContainer}>
+            <h2>Get My resume here:</h2>
+            <a
+              className={styles.resumeLink}
+              href="https://drive.google.com/uc?export=download&id=1zgjLfBMHpZf-LA73HHOG4hBklBXe1a7t"
+              target="_blank"
+            >
+              <ArrowDownTrayIcon className={styles.resumeIcon} />
+            </a>
+          </div>
+        </div>
+        <Exp />
       </div>
     </main>
-  )
+  );
 }
