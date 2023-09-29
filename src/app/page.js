@@ -24,7 +24,7 @@ export default function Home() {
           </div>
           <div className={styles.singleQuickContainer}>
             <h4>Languages I speak:</h4>
-            <h2>English, Spainsh, Polish</h2>
+            <h2>English, Spanish, Polish</h2>
           </div>
           <div className={styles.singleQuickContainer}>
             <h4>Born in:</h4>
