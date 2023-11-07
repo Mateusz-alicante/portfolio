@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-import SysArch from "./media/SysArch.png";
+import SysArch from "../WhatsApp/media/sysArch.png";
 
 export default function Page() {
   return (
