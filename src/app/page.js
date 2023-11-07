@@ -5,6 +5,7 @@ import Shares from "../Components/Shares/Shares";
 import Exp from "../Components/Exp/Exp";
 import Pro from "../Components/Projects/Exp";
 import Res from "../Components/Research/Exp";
+import Education from "@/Components/Education/Education";
 
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
@@ -17,8 +18,8 @@ export default function Home() {
         <p>Here is some quick info about me: </p>
         <div className={styles.quickContainer}>
           <div className={styles.singleQuickContainer}>
-            <h4>Currently studying at: University of Toronto degree:</h4>
-            <h2>Engineering Science (second year)</h2>
+            <h4>Currently studying at:</h4>
+            <h2>University of Toronto</h2>
           </div>
           <div className={styles.singleQuickContainer}>
             <h4>Favorite hobby:</h4>
@@ -51,6 +52,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <Education />
         <Exp />
         <Pro />
         <Res />

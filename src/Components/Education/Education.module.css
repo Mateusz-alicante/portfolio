@@ -1,0 +1,11 @@
+.courseLink {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 2em 0;
+}
+
+.container p {
+    font-size: 1.5em;
+}
