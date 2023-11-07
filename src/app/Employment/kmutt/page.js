@@ -15,6 +15,10 @@ export default function Page() {
     <div className={styles.container}>
       <ExpHeader data={data} />
       <div className={styles.content}>
+        The internship had a strong focus on AI. Apart from the projects listed
+        below, I completed a number of AI courses, and participated in a number
+        of AI Kaggle competitions.
+        <br></br>
         During my internship I worked on a number of projects and research
         papers:
         <h3>Projects:</h3>
