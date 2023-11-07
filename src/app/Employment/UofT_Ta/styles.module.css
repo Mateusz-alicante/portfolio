@@ -1,0 +1,13 @@
+.container {
+    width: 80%;
+    margin: 3em auto;
+}
+
+.content {
+    font-size: 2em;
+    margin-top: 3em;
+}
+
+.list {
+    padding-left: 2em;
+}

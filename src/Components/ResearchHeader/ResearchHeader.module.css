@@ -1,0 +1,16 @@
+.backIcon {
+    height: 3em;
+}
+
+.backContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 1em 0;
+}
+
+.bottomInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

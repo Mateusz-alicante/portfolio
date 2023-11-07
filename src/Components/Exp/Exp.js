@@ -1,10 +1,11 @@
 import SingleContainer from "./SingleContainer/SingleContainer";
 
 import UofT_Ta_data from "../../app/Employment/UofT_Ta/data";
+import kmutt_data from "../../app/Employment/kmutt/data";
 
 import styles from "./Exp.module.css";
 
-const employment = [UofT_Ta_data];
+const employment = [UofT_Ta_data, kmutt_data];
 
 export default function Exp() {
   return (

@@ -3,6 +3,8 @@ import styles from "./page.module.css";
 
 import Shares from "../Components/Shares/Shares";
 import Exp from "../Components/Exp/Exp";
+import Pro from "../Components/Projects/Exp";
+import Res from "../Components/Research/Exp";
 
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
@@ -50,6 +52,8 @@ export default function Home() {
           </div>
         </div>
         <Exp />
+        <Pro />
+        <Res />
       </div>
     </main>
   );
