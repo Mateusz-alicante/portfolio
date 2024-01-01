@@ -6,22 +6,39 @@ import Link from "next/link";
 import Image from "next/image";
 
 import SysArch from "../WhatsApp/media/sysArch.png";
+import Poster from "../WhatsApp/media/poster.png";
 
 export default function Page() {
   return (
     <div className={styles.container}>
       <ResearchHeader data={data} />
       <div className={styles.content}>
-        <h3>Status:</h3>
+        <h3>Link to Paper</h3>
         <p>
-          The paper has been submitted and approved to be presented at a
-          conference this December.
+          <Link
+            href={"https://dl.acm.org/doi/abs/10.1145/3628797.3628966"}
+            className={styles.contentLink}
+          >
+            At ACM library
+          </Link>
         </p>
         <h3>conference:</h3>
         <Link href={"https://soict.org/"} className={styles.contentLink}>
           International Symposium on Information and Communication Technology -
           SOICT 2023
         </Link>
+        <h3>Awards:</h3>
+        <li>Best Poster award at SOICT 2023</li>
+        <h3>Video Presentation:</h3>
+        <iframe
+          className={styles.video}
+          src="https://www.youtube.com/embed/Qp7C-6U_CUM?si=R8tZtpzvT6DlFEts"
+          width="640"
+          height="480"
+          allow="autoplay"
+        ></iframe>
+        <h3>Poster:</h3>
+        <Image className={styles.image} src={Poster} width={1000} />
         <h3>Abstract:</h3>
         <p>
           With the increasing reliance on instant messaging applications like
