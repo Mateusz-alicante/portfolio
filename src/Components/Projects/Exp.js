@@ -3,10 +3,11 @@ import SingleContainer from "./SingleContainer/SingleContainer";
 import hand_track_data from "../../app/Projects/hand_track/data";
 import robotics_hack_data from "../../app/Projects/robotics_hack/data";
 import ai_notes_data from "../../app/Projects/ai_notes/data";
+import utat from "../../app/Projects/utat/data";
 
 import styles from "./Exp.module.css";
 
-const projects = [ai_notes_data, hand_track_data, robotics_hack_data];
+const projects = [ai_notes_data, hand_track_data, robotics_hack_data, utat];
 
 export default function Exp() {
   return (

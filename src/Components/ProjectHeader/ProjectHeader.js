@@ -11,7 +11,7 @@ export default ({ data }) => {
         <ArrowLeftIcon className={styles.backIcon} />
         <h2>Main page</h2>
       </Link>
-      <h1>{data.title}</h1>
+      <h1>{data.long_title || data.title}</h1>
       <Image src={data.cover} className={styles.image} placeholder="blur" />
     </div>
   );
