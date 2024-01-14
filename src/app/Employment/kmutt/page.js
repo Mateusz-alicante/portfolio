@@ -10,6 +10,8 @@ import CyberKillChain from "../../Research/CyberKillChain/data";
 import HandTrack from "../../Projects/hand_track/data";
 import Robo from "../../Projects/robotics_hack/data";
 
+import Recommendation from "@/Components/Recommendation/Recommendation";
+
 export default function Page() {
   return (
     <div className={styles.container}>
@@ -25,6 +27,8 @@ export default function Page() {
         <br></br>
         <ItemLink data={Robo} />
         <ItemLink data={HandTrack} />
+        <h3>Recommendation:</h3>
+        <Recommendation text={recommendationText} name={recommendationName} />
         <h3>Research Experience:</h3>
         <ItemLink data={WhatsApp} />
         <ItemLink data={CyberKillChain} />
@@ -32,3 +36,7 @@ export default function Page() {
     </div>
   );
 }
+
+const recommendationText =
+  "It's an absolute pleasure to host Mateusz at IC2 over the Summer of 2023. He's enthusiastic, highly intelligent, and able to complete his tasks efficiently and effectively. Mateusz simply exceeded my expectations in every positive way!";
+const recommendationName = "Prof. Jonathan H. Chan";

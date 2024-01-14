@@ -6,7 +6,7 @@ export default {
   workplace_sentence: "the University of Toronto",
   location: "Toronto, Ontario",
   position: "Teaching Assistant",
-  start: new Date(2021, 8),
+  start: new Date(2023, 8),
   end: undefined,
   cover: cover,
   url: "/Employment/UofT_Ta",
