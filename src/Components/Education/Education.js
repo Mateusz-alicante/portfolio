@@ -23,7 +23,9 @@ export default () => {
             "https://engsci.utoronto.ca/program/majors/machine-intelligence/"
           }
         >
-          <span className={styles.courseLink}>Machine Inteligence mayor</span>
+          <span className={styles.courseLink}>
+            Electrical and Computer engineering major with minor in AI.
+          </span>
         </Link>{" "}
         .
       </p>
